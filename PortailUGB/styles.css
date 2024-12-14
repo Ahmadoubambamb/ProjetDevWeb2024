@@ -29,8 +29,12 @@ body {
    border: solid 1px rgb(245, 129, 129);
    padding: 15px;
    margin-bottom: 15px;
-   width: 100%;
+   /* width: 100%; */
    font-size: small;
+   background-color: white;
+   stop-opacity: 0;
+   margin-left: 20px;
+   margin-right: 20px;
 }
 
 .container{
