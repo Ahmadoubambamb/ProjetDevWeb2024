@@ -10,7 +10,7 @@
 <body>
      <div class ="container">
         
-        <form action="traitement.php">
+        <form  method="POST" action="traitement.php">
            <!-- <div class="hidden-div">
               <i class='bx user-x'></i> L'email ou mot de passe invalide.
            </div> -->
@@ -20,18 +20,18 @@
          <div>
             <h1>Service d'Authentification Unique</h1>
          </div>
-           <div class ="input-box">
-             <label for="mail">Email  institutionnel  UGB</label>
+           <div class ="input-box" id="inputemail">
+             <label for="email">Email  institutionnel  UGB</label>
              <input type="email" name="email" placeholder="Ex:xxxx.xxxx@ugb.edu.sn" required>
            </div>
-           <div  class ="input-box">
+           <div  class ="input-box"  id = "inputpaswd">
              <label for="password">Mot de passe</label>
              <input type="password" name="password" placeholder="****************" required>
            </div>
            <div class="mesg">
               <div>
                  <span>
-                    Activation mail UGB
+                  <a href="#">  Activation mail UGB</a>
                  </span>
               </div>
                <div>
@@ -46,7 +46,7 @@
         </form>
      </div>
      <script src="connexion.js"> 
-       
+      
      </script>
 </body>
 </html>
