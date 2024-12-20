@@ -60,7 +60,7 @@ function gererForm(){
                     afficherErreurMessage(response.message);
                  } else {
                      // Rediriger si connexion réussie
-                     window.location.href = "etete.php"; // Change l'URL
+                     window.location.href = "ins.php"; // Change l'URL
                  }
              } else {
                 afficherErreurMessage("Erreur de connexion au serveur");
@@ -79,8 +79,7 @@ function afficherErreurMessage(message){
     var ctn = document.querySelector('.container');
     var errordiv = document.createElement('div');
     errordiv.className = 'hidden-div';
-    errordiv.innerHTML = "<box-icon name='error'></box-icon>"+message;
-    errordiv.style.animation = "shake 0.5s ease-in-out";
+    errordiv.innerHTML = "<span class='pficon pficon-error-circle-o'></span>"+message;
     ctn.insertBefore(errordiv, ctn.firstChild);
     setTimeout(() => {
         errordiv.remove();
