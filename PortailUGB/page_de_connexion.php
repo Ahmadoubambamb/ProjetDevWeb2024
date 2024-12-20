@@ -8,9 +8,10 @@
     <title>portail UGB</title>
 </head>
 <body>
+
      <div class ="container">
         
-        <form  method="POST" action="traitement.php">
+        <form id="idform">
            <!-- <div class="hidden-div">
               <i class='bx user-x'></i> L'email ou mot de passe invalide.
            </div> -->
@@ -22,11 +23,11 @@
          </div>
            <div class ="input-box" id="inputemail">
              <label for="email">Email  institutionnel  UGB</label>
-             <input type="email" name="email" placeholder="Ex:xxxx.xxxx@ugb.edu.sn" required>
+             <input type="text" name="email" placeholder="Ex:xxxx.xxxx@ugb.edu.sn" >
            </div>
            <div  class ="input-box"  id = "inputpaswd">
              <label for="password">Mot de passe</label>
-             <input type="password" name="password" placeholder="****************" required>
+             <input type="password" name="password" placeholder="****************" >
            </div>
            <div class="mesg">
               <div>
@@ -41,7 +42,7 @@
                </div>
            </div>
            <div class ="bnt-div">
-            <button type ="subimt" class="btn">Connexion</button>
+            <button type ="submit" class="btn">Connexion</button>
            </div>
         </form>
      </div>
@@ -50,3 +51,5 @@
      </script>
 </body>
 </html>
+
+
